@@ -89,12 +89,26 @@ echo "ANTHROPIC_API_KEY=your_key_here" > .env
 python pronto_gtm_system.py
 ```
 
-### View the Dashboard
+### View the Dashboard (local)
 ```bash
-cd output
+cd pronto_gtm/output
 python -m http.server 8080
 # Open http://localhost:8080 in Chrome
 ```
+
+### Deploy on Vercel
+
+1. Import this repo at [vercel.com/new](https://vercel.com/new).
+2. Settings (auto-detected from `vercel.json`):
+   - **Framework Preset:** Other
+   - **Root Directory:** `.` (repo root)
+   - **Build Command:** none
+   - **Output Directory:** `pronto_gtm/output`
+3. Click **Deploy**.
+
+Live URL: `https://your-project.vercel.app`
+
+> No API keys needed for the static dashboard — only the Python pipeline uses `.env`.
 
 ---
 

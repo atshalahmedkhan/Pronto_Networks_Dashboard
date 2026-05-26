@@ -1,0 +1,6 @@
+pronto_gtm/.env
+pronto_gtm/**/__pycache__
+pronto_gtm/output/progress.json
+*.pyc
+.venv
+venv
