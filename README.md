@@ -96,17 +96,8 @@ python -m http.server 8080
 # Open http://localhost:8080 in Chrome
 ```
 
-### Deploy on Vercel
 
-1. Import this repo at [vercel.com/new](https://vercel.com/new).
-2. Settings (auto-detected from `vercel.json`):
-   - **Framework Preset:** Other
-   - **Root Directory:** `.` (repo root)
-   - **Build Command:** none
-   - **Output Directory:** `pronto_gtm/output`
-3. Click **Deploy**.
-
-Live URL: `https://your-project.vercel.app`
+Live URL: `https://pronto-networks-dashboard-u2y6.vercel.app/`
 
 > No API keys needed for the static dashboard — only the Python pipeline uses `.env`.
 
