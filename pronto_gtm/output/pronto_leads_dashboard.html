@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pronto Networks — GTM Intelligence</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { background: #0a1628; }
+    .badge-hospitality { background:#1e3a5f; color:#93c5fd; }
+    .badge-retail { background:#4c1d95; color:#c4b5fd; }
+    .badge-healthcare { background:#14532d; color:#86efac; }
+    .badge-pos { background:#7c2d12; color:#fdba74; }
+    .badge-kiosk { background:#134e4a; color:#5eead4; }
+    .badge-smart { background:#164e63; color:#67e8f9; }
+    .badge-default { background:#334155; color:#cbd5e1; }
+    th.sortable { cursor: pointer; user-select: none; }
+    th.sortable:hover { color: #fb923c; }
+  </style>
+</head>
+<body class="text-slate-200 min-h-screen">
+  <header class="border-b border-slate-800 bg-[#0d1f3c]">
+    <div class="max-w-7xl mx-auto px-4 py-8 sm:px-6">
+      <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
+        <div>
+          <h1 class="text-3xl font-bold text-white tracking-tight">
+            Pronto <span class="text-orange-500">Networks</span>
+          </h1>
+          <p class="text-slate-400 mt-1">Enterprise WiFi · LTE · 5G · HaLow for connected businesses</p>
+        </div>
+        <p class="text-sm text-slate-400">GTM Intelligence Report — Generated May 26, 2026</p>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
+        <div class="rounded-lg bg-slate-900/80 border border-slate-700 p-4">
+          <p class="text-xs text-slate-500 uppercase">Prospects found</p>
+          <p class="text-2xl font-bold text-white">25</p>
+        </div>
+        <div class="rounded-lg bg-slate-900/80 border border-slate-700 p-4">
+          <p class="text-xs text-slate-500 uppercase">Average fit score</p>
+          <p class="text-2xl font-bold text-orange-400">7.7</p>
+        </div>
+        <div class="rounded-lg bg-slate-900/80 border border-slate-700 p-4">
+          <p class="text-xs text-slate-500 uppercase">Top industry</p>
+          <p class="text-lg font-semibold text-white truncate">POS Systems &amp; Payment Processing</p>
+        </div>
+        <div class="rounded-lg bg-slate-900/80 border border-slate-700 p-4">
+          <p class="text-xs text-slate-500 uppercase">Emails generated</p>
+          <p class="text-2xl font-bold text-white">10</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 py-10 sm:px-6">
+    <section class="mb-12">
+      <div class="flex flex-col sm:flex-row sm:items-center gap-4 mb-6">
+        <h2 class="text-xl font-semibold text-white">All prospects</h2>
+        <div class="flex flex-wrap gap-3 sm:ml-auto">
+          <input id="search" type="search" placeholder="Search company..."
+            class="rounded-lg bg-slate-900 border border-slate-700 px-4 py-2 text-sm focus:outline-none focus:border-orange-500 w-full sm:w-48" />
+          <select id="industry-filter"
+            class="rounded-lg bg-slate-900 border border-slate-700 px-4 py-2 text-sm focus:outline-none focus:border-orange-500">
+            <option value="">All industries</option>
+          </select>
+        </div>
+      </div>
+      <div class="overflow-x-auto rounded-xl border border-slate-700/80">
+        <table class="w-full text-sm text-left" id="leads-table">
+          <thead class="bg-[#0d1f3c] text-slate-400 uppercase text-xs">
+            <tr>
+              <th class="px-4 py-3 sortable" data-sort="rank">Rank</th>
+              <th class="px-4 py-3 sortable" data-sort="company_name">Company</th>
+              <th class="px-4 py-3 sortable" data-sort="industry">Industry</th>
+              <th class="px-4 py-3 sortable" data-sort="employee_count">Employees</th>
+              <th class="px-4 py-3 sortable" data-sort="fit_score">Fit</th>
+              <th class="px-4 py-3">Score reason</th>
+              <th class="px-4 py-3">Decision maker</th>
+              <th class="px-4 py-3 sortable" data-sort="pronto_product">Product</th>
+            </tr>
+          </thead>
+          <tbody id="table-body" class="divide-y divide-slate-800 bg-slate-900/40"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-xl font-semibold text-white mb-6">Top 10 — Ready to send</h2>
+      <div class="grid lg:grid-cols-2 gap-6">
+        
+        <div class="card rounded-xl border border-slate-700/80 bg-slate-900/60 p-6 shadow-lg">
+          <div class="flex flex-wrap items-start justify-between gap-3 mb-4">
+            <div>
+              <span class="text-orange-400 font-bold text-sm">#1 · Score 9/10</span>
+              <h3 class="text-xl font-semibold text-white mt-1">Shift4 Payments</h3>
+              <p class="text-slate-400 text-sm">POS Systems &amp; Payment Processing · Allentown, PA</p>
+            </div>
+            <a href="https://www.shift4.com" target="_blank" rel="noopener"
+               class="text-sm text-orange-400 hover:text-orange-300">Visit site →</a>
+          </div>
+          <div class="grid md:grid-cols-2 gap-4 text-sm text-slate-300 mb-4">
+            <div><span class="text-slate-500">Target:</span> VP of Infrastructure &amp; Network Operations</div>
+            <div><span class="text-slate-500">Product fit:</span> <span class="text-orange-300">LTE</span></div>
+            <div><span class="text-slate-500">Employees:</span> 300-400</div>
+            <div><span class="text-slate-500">Best timing:</span> Q1-Q2 during annual budget planning cycles when merchants are expanding locations and Shift4 is scaling their terminal footprint; also target post-holiday season (Jan-Feb) when network vulnerabilities from peak volume are identified</div>
+            <div class="md:col-span-2"><span class="text-slate-500">Tech stack:</span> Likely hybrid of wired broadband (primary) with cellular backup, proprietary payment gateway infrastructure, legacy terminal connectivity with modern cloud integration</div>
+            <div class="md:col-span-2"><span class="text-slate-500">Why networking:</span> Operates a nationwide network of payment terminals and POS systems across thousands of retail and hospitality locations requiring reliable connectivity for transaction processing and real-time data synchronization.</div>
+          </div>
+          <p class="text-xs text-slate-500 uppercase tracking-wide mb-2">Pain points</p>
+          <ul class="list-disc list-inside text-slate-300 text-sm mb-5 space-y-1"><li>Ensuring 99.9%+ uptime across distributed payment terminal networks to prevent transaction failures and revenue loss</li><li>Managing connectivity redundancy and failover across thousands of retail/hospitality locations with varying network quality</li><li>Reducing latency and packet loss for real-time transaction processing and PCI-DSS compliance with secure data synchronization</li></ul>
+          <p class="text-xs text-slate-500 uppercase tracking-wide mb-2">Cold email</p>
+          <p class="text-sm text-orange-200 mb-2"><strong>Subject:</strong> 99.9% uptime for Shift4&#x27;s payment terminals nationwide</p>
+          <div class="relative">
+            <textarea readonly id="email-1"
+              class="w-full h-36 rounded-lg bg-slate-950 border border-slate-700 text-slate-200 text-sm p-4 font-mono resize-y">Hi [Name],
+
+I&#x27;ve been following Shift4&#x27;s growth across retail and hospitality, and I imagine keeping thousands of payment terminals connected and synced in real-time is no small feat—especially when network hiccups directly hit revenue. We work with companies like Toast and SpotOn to solve exactly this: delivering carrier-grade LTE connectivity that eliminates the redundancy headaches and latency issues that kill transaction speeds and compliance.
+
+Given the mission-critical nature of your terminal network, I&#x27;d love to explore whether our LTE infrastructure could give your team the 99.9%+ uptime and failover reliability you need without the complexity. Would you have 15 minutes next week for a quick call?
+
+Thanks,
+[Your Name]</textarea>
+            <button onclick="copyEmail('email-1', this)"
+              class="absolute top-2 right-2 px-3 py-1 text-xs rounded bg-orange-500 hover:bg-orange-400 text-slate-900 font-semibold">
+              Copy
+            </button>
+          </div>
+        </div>
+        <div class="card rounded-xl border border-slate-700/80 bg-slate-900/60 p-6 shadow-lg">
+          <div class="flex flex-wrap items-start justify-between gap-3 mb-4">
+            <div>
+              <span class="text-orange-400 font-bold text-sm">#2 · Score 9/10</span>
+              <h3 class="text-xl font-semibold text-white mt-1">TouchBistro</h3>
+              <p class="text-slate-400 text-sm">Hospitality POS · San Francisco, CA</p>
+            </div>
+            <a href="https://www.touchbistro.com" target="_blank" rel="noopener"
+               class="text-sm text-orange-400 hover:text-orange-300">Visit site →</a>
+          </div>
+          <div class="grid md:grid-cols-2 gap-4 text-sm text-slate-300 mb-4">
+            <div><span class="text-slate-500">Target:</span> VP of Product Engineering or Director of Infrastructure</div>
+            <div><span class="text-slate-500">Product fit:</span> <span class="text-orange-300">LTE</span></div>
+            <div><span class="text-slate-500">Employees:</span> 150-250</div>
+            <div><span class="text-slate-500">Best timing:</span> Q4 2024 or Q1 2025 when restaurant chains are planning holiday expansion or new location rollouts and evaluating infrastructure reliability before high-volume periods</div>
+            <div class="md:col-span-2"><span class="text-slate-500">Tech stack:</span> iPad-based native iOS stack, likely AWS or Google Cloud backend, Stripe or Square payment gateway, WiFi 6 with cellular failover as secondary consideration</div>
+            <div class="md:col-span-2"><span class="text-slate-500">Why networking:</span> Provides iPad-based POS solutions to restaurants and bars that depend on seamless WiFi and cellular connectivity for order management, kitchen display systems, and payment processing across multiple locations.</div>
+          </div>
+          <p class="text-xs text-slate-500 uppercase tracking-wide mb-2">Pain points</p>
+          <ul class="list-disc list-inside text-slate-300 text-sm mb-5 space-y-1"><li>WiFi reliability and coverage gaps across multi-location restaurant deployments causing order delays and payment processing failures</li><li>Dependency on single connectivity provider creates service disruption risk when primary network fails, impacting real-time kitchen display systems and customer transactions</li><li>Bandwidth contention between iPad POS terminals, kitchen displays, and customer-facing systems during peak dining hours degrading order throughput and checkout speed</li></ul>
+          <p class="text-xs text-slate-500 uppercase tracking-wide mb-2">Cold email</p>
+          <p class="text-sm text-orange-200 mb-2"><strong>Subject:</strong> Fixing WiFi dead zones for TouchBistro locations</p>
+          <div class="relative">
+            <textarea readonly id="email-2"
+              class="w-full h-36 rounded-lg bg-slate-950 border border-slate-700 text-slate-200 text-sm p-4 font-mono resize-y">Hey there,
+
+I was looking at TouchBistro&#x27;s multi-location footprint and realized something: when WiFi drops during dinner rush, your iPad terminals go dark and orders back up in the kitchen. We work with hospitality POS companies like Toast to solve exactly this—blending WiFi, LTE, and 5G so restaurants never lose connectivity, even when one network fails.
+
+The setup gives you automatic failover, better bandwidth during peak hours, and zero payment processing hiccups. Most importantly, your customers don&#x27;t notice when the network switches—the kitchen display just keeps moving orders.
+
+Worth 15 minutes to see if this fits your deployment model? I can show you how it works at other multi-unit restaurants.
+
+Cheers</textarea>
+            <button onclick="copyEmail('email-2', this)"
+              class="absolute top-2 right-2 px-3 py-1 text-xs rounded bg-orange-500 hover:bg-orange-400 text-slate-900 font-semibold">
+              Copy
+            </button>
+          </div>
+        </div>
+        <div class="card rounded-xl border border-slate-700/80 bg-slate-900/60 p-6 shadow-lg">
+          <div class="flex flex-wrap items-start justify-between gap-3 mb-4">
+            <div>
+              <span class="text-orange-400 font-bold text-sm">#3 · Score 9/10</span>
+              <h3 class="text-xl font-semibold text-white mt-1">Clover (Fiserv)</h3>
+              <p class="text-slate-400 text-sm">POS Systems / Hospitality &amp; Retail · Mountain View, CA</p>
+            </div>
+            <a href="https://www.clover.com" target="_blank" rel="noopener"
+               class="text-sm text-orange-400 hover:text-orange-300">Visit site →</a>
+          </div>
+          <div class="grid md:grid-cols-2 gap-4 text-sm text-slate-300 mb-4">
+            <div><span class="text-slate-500">Target:</span> VP of Infrastructure &amp; Network Operations</div>
+            <div><span class="text-slate-500">Product fit:</span> <span class="text-orange-300">WiFi</span></div>
+            <div><span class="text-slate-500">Employees:</span> 200-300</div>
+            <div><span class="text-slate-500">Best timing:</span> Q1 or Q3 when retail/hospitality partners plan annual technology refresh cycles and budget allocation; target post-holiday season (Jan-Feb) when performance issues from peak periods are documented</div>
+            <div class="md:col-span-2"><span class="text-slate-500">Tech stack:</span> Likely Cisco or Ubiquiti wireless infrastructure at merchant locations with cloud-based Clover backend; potential mix of legacy and modern WiFi 5/6 access points across their partner network</div>
+            <div class="md:col-span-2"><span class="text-slate-500">Why networking:</span> Clover operates cloud-based POS systems across thousands of merchant locations requiring reliable WiFi/LTE connectivity for payment processing, inventory management, and customer analytics. Their distributed network of retail and hospitality partners needs robust wireless infrastructure for seamless operations.</div>
+          </div>
+          <p class="text-xs text-slate-500 uppercase tracking-wide mb-2">Pain points</p>
+          <ul class="list-disc list-inside text-slate-300 text-sm mb-5 space-y-1"><li>Ensuring 99.9%+ uptime across distributed merchant locations with varying WiFi quality, impacting payment processing reliability and customer transactions</li><li>Managing network congestion during peak hours in high-density retail/hospitality venues where multiple POS terminals, inventory systems, and customer analytics compete for bandwidth</li><li>Reducing support tickets and on-site troubleshooting costs from connectivity issues at thousands of merchant endpoints, each with different ISP quality and hardware capabilities</li></ul>
+          <p class="text-xs text-slate-500 uppercase tracking-wide mb-2">Cold email</p>
+          <p class="text-sm text-orange-200 mb-2"><strong>Subject:</strong> Fixing WiFi reliability for Clover merchants (99.9% uptime)</p>
+          <div class="relative">
+            <textarea readonly id="email-3"
+              class="w-full h-36 rounded-lg bg-slate-950 border border-slate-700 text-slate-200 text-sm p-4 font-mono resize-y">Hi [Name],
+
+We work with POS companies like Toast and SpotOn to solve a problem I&#x27;m guessing hits Clover hard: merchants losing transactions and customers because WiFi drops during peak hours. When you&#x27;re managing connectivity across thousands of locations with different ISPs and hardware, reliability becomes everything.
+
+Our WiFi infrastructure is built specifically for distributed retail and hospitality environments—it handles the congestion, stays up when it matters most, and cuts down those expensive support tickets from connectivity issues. Given Clover&#x27;s scale, we&#x27;ve seen companies similar to yours reduce downtime by eliminating the weak links in their merchant networks.
+
+Would you be open to a quick 15-minute call to see if we&#x27;re a fit for your infrastructure roadmap?
+
+Best,
+[Your Name]</textarea>
+            <button onclick="copyEmail('email-3', this)"
+              class="absolute top-2 right-2 px-3 py-1 text-xs rounded bg-orange-500 hover:bg-orange-400 text-slate-900 font-semibold">
+              Copy
+            </button>
+          </div>
+        </div>
+        <div class="card rounded-xl border border-slate-700/80 bg-slate-900/60 p-6 shadow-lg">
+          <div class="flex flex-wrap items-start justify-between gap-3 mb-4">
+            <div>
+              <span class="text-orange-400 font-bold text-sm">#4 · Score 9/10</span>
+              <h3 class="text-xl font-semibold text-white mt-1">Heartland Payment Systems</h3>
+              <p class="text-slate-400 text-sm">POS Systems &amp; Payment Processing · Lincoln, Nebraska</p>
+            </div>
+            <a href="https://www.heartlandpaymentsystems.com" target="_blank" rel="noopener"
+               class="text-sm text-orange-400 hover:text-orange-300">Visit site →</a>
+          </div>
+          <div class="grid md:grid-cols-2 gap-4 text-sm text-slate-300 mb-4">
+            <div><span class="text-slate-500">Target:</span> VP of Network Operations or Director of Infrastructure</div>
+            <div><span class="text-slate-500">Product fit:</span> <span class="text-orange-300">LTE</span></div>
+            <div><span class="text-slate-500">Employees:</span> 300-400</div>
+            <div><span class="text-slate-500">Best timing:</span> Q1-Q2 following holiday season when payment processing reliability issues surface and budgets reset; target during POS infrastructure modernization cycles or when expanding to new venue types</div>
+            <div class="md:col-span-2"><span class="text-slate-500">Tech stack:</span> Likely hybrid of venue-provided WiFi with cellular failover, proprietary POS management platform, cloud-based transaction processing, with potential legacy on-premise infrastructure</div>
+            <div class="md:col-span-2"><span class="text-slate-500">Why networking:</span> Operates thousands of connected POS terminals across retail and hospitality venues that require reliable WiFi/LTE connectivity for payment processing and real-time transaction management.</div>
+          </div>
+          <p class="text-xs text-slate-500 uppercase tracking-wide mb-2">Pain points</p>
+          <ul class="list-disc list-inside text-slate-300 text-sm mb-5 space-y-1"><li>Ensuring 99.9%+ uptime across thousands of distributed POS terminals to prevent transaction failures and revenue loss</li><li>Managing connectivity reliability in diverse venue environments (retail stores, restaurants) with inconsistent WiFi infrastructure from venue operators</li><li>Reducing support costs and troubleshooting time when POS devices lose connectivity, impacting customer experience and payment processing</li></ul>
+          <p class="text-xs text-slate-500 uppercase tracking-wide mb-2">Cold email</p>
+          <p class="text-sm text-orange-200 mb-2"><strong>Subject:</strong> Fixing connectivity issues for Heartland&#x27;s distributed POS network</p>
+          <div class="relative">
+            <textarea readonly id="email-4"
+              class="w-full h-36 rounded-lg bg-slate-950 border border-slate-700 text-slate-200 text-sm p-4 font-mono resize-y">Hi [Name],
+
+I&#x27;ve been following Heartland&#x27;s growth in POS processing, and I imagine managing reliable connectivity across thousands of terminals in different venues is a real headache—especially when spotty WiFi from venue operators tanks your uptime and impacts transactions. We&#x27;ve worked with payment processors like SpotOn who faced the same challenge, and they&#x27;ve cut their connectivity-related support costs significantly by layering in dedicated LTE connectivity as a failover.
+
+Pronto&#x27;s LTE infrastructure gives you that reliability guarantee without relying on venue WiFi quality. Given your scale, I think there&#x27;s a real opportunity to reduce your support burden and hit that 99.9%+ uptime you need.
+
+Would you have 15 minutes next week to explore how this could work for Heartland?</textarea>
+            <button onclick="copyEmail('email-4', this)"
+              class="absolute top-2 right-2 px-3 py-1 text-xs rounded bg-orange-500 hover:bg-orange-400 text-slate-900 font-semibold">
+              Copy
+            </button>
+          </div>
+        </div>
+        <div class="card rounded-xl border border-slate-700/80 bg-slate-900/60 p-6 shadow-lg">
+          <div class="flex flex-wrap items-start justify-between gap-3 mb-4">
+            <div>
+              <span class="text-orange-400 font-bold text-sm">#5 · Score 9/10</span>
+              <h3 class="text-xl font-semibold text-white mt-1">Micros Systems (Oracle)</h3>
+              <p class="text-slate-400 text-sm">Hospitality POS · Austin, TX</p>
+            </div>
+            <a href="https://www.oracle.com/hospitality/" target="_blank" rel="noopener"
+               class="text-sm text-orange-400 hover:text-orange-300">Visit site →</a>
+          </div>
+          <div class="grid md:grid-cols-2 gap-4 text-sm text-slate-300 mb-4">
+            <div><span class="text-slate-500">Target:</span> VP of Product Infrastructure or Director of Cloud Operations</div>
+            <div><span class="text-slate-500">Product fit:</span> <span class="text-orange-300">LTE</span></div>
+            <div><span class="text-slate-500">Employees:</span> 300-400</div>
+            <div><span class="text-slate-500">Best timing:</span> Q1 2025 when hospitality chains finalize annual IT budgets and network upgrades post-holiday season; target during their product roadmap planning cycles when infrastructure investments are evaluated</div>
+            <div class="md:col-span-2"><span class="text-slate-500">Tech stack:</span> Oracle Cloud Infrastructure (OCI) backend, cloud-connected POS terminals, likely hybrid WiFi/cellular for failover, legacy on-premises systems at some locations</div>
+            <div class="md:col-span-2"><span class="text-slate-500">Why networking:</span> Operates cloud-connected POS systems across thousands of restaurants and hotels requiring reliable WiFi/LTE for payment processing and real-time inventory management. Needs robust networking infrastructure for multi-location synchronization and guest connectivity.</div>
+          </div>
+          <p class="text-xs text-slate-500 uppercase tracking-wide mb-2">Pain points</p>
+          <ul class="list-disc list-inside text-slate-300 text-sm mb-5 space-y-1"><li>Ensuring consistent WiFi/LTE connectivity across thousands of distributed restaurant and hotel locations for real-time POS transaction processing and inventory synchronization</li><li>Managing network reliability for payment processing systems where downtime directly impacts revenue and customer experience, requiring redundant connectivity solutions</li><li>Supporting dual connectivity needs for both critical POS operations and guest-facing WiFi networks without network congestion or security vulnerabilities</li></ul>
+          <p class="text-xs text-slate-500 uppercase tracking-wide mb-2">Cold email</p>
+          <p class="text-sm text-orange-200 mb-2"><strong>Subject:</strong> Eliminating connectivity gaps across your restaurant &amp; hotel locations</p>
+          <div class="relative">
+            <textarea readonly id="email-5"
+              class="w-full h-36 rounded-lg bg-slate-950 border border-slate-700 text-slate-200 text-sm p-4 font-mono resize-y">Hi [Name],
+
+I was looking at how Micros handles POS connectivity across thousands of locations and realized network reliability is probably keeping you up at night—one dropped connection during peak service impacts revenue and guest experience instantly. We work with hospitality POS providers like Toast who faced similar challenges managing both critical transaction processing and guest WiFi without network congestion or security issues.
+
+Prono Networks&#x27; LTE infrastructure gives you redundant, enterprise-grade connectivity specifically built for distributed locations, so your payment systems stay live even when primary connections fail. Rather than pitch, I&#x27;d love to understand your current setup in a quick 15-minute call and see if this could reduce your downtime headaches.
+
+Would next Tuesday or Wednesday work for a brief conversation?</textarea>
+            <button onclick="copyEmail('email-5', this)"
+              class="absolute top-2 right-2 px-3 py-1 text-xs rounded bg-orange-500 hover:bg-orange-400 text-slate-900 font-semibold">
+              Copy
+            </button>
+          </div>
+        </div>
+        <div class="card rounded-xl border border-slate-700/80 bg-slate-900/60 p-6 shadow-lg">
+          <div class="flex flex-wrap items-start justify-between gap-3 mb-4">
+            <div>
+              <span class="text-orange-400 font-bold text-sm">#6 · Score 9/10</span>
+              <h3 class="text-xl font-semibold text-white mt-1">PAR Technology</h3>
+              <p class="text-slate-400 text-sm">Hospitality Technology · New York, NY</p>
+            </div>
+            <a href="https://www.partech.com/" target="_blank" rel="noopener"
+               class="text-sm text-orange-400 hover:text-orange-300">Visit site →</a>
+          </div>
+          <div class="grid md:grid-cols-2 gap-4 text-sm text-slate-300 mb-4">
+            <div><span class="text-slate-500">Target:</span> VP of Product Engineering or Director of Infrastructure</div>
+            <div><span class="text-slate-500">Product fit:</span> <span class="text-orange-300">WiFi</span></div>
+            <div><span class="text-slate-500">Employees:</span> 250-350</div>
+            <div><span class="text-slate-500">Best timing:</span> Q4 2024 or Q1 2025 when restaurants finalize annual technology budgets and plan holiday season infrastructure upgrades to handle increased transaction volume</div>
+            <div class="md:col-span-2"><span class="text-slate-500">Tech stack:</span> Cloud-based POS (likely AWS or Azure), Stripe or Square payment processing, on-premise kitchen display systems, cellular backup for payment terminals, standard enterprise WiFi mesh networks</div>
+            <div class="md:col-span-2"><span class="text-slate-500">Why networking:</span> Provides connected restaurant management systems and POS solutions that depend on continuous WiFi and cellular connectivity for order management, payment processing, and kitchen display systems across multiple venues.</div>
+          </div>
+          <p class="text-xs text-slate-500 uppercase tracking-wide mb-2">Pain points</p>
+          <ul class="list-disc list-inside text-slate-300 text-sm mb-5 space-y-1"><li>Ensuring reliable WiFi and cellular redundancy across multiple restaurant locations to prevent POS downtime and failed payment processing</li><li>Managing network performance degradation during peak dining hours when multiple kitchen displays, ordering terminals, and customer-facing devices compete for bandwidth</li><li>Reducing dependency on venue-provided WiFi quality which varies significantly and creates support burden for distributed restaurant operators</li></ul>
+          <p class="text-xs text-slate-500 uppercase tracking-wide mb-2">Cold email</p>
+          <p class="text-sm text-orange-200 mb-2"><strong>Subject:</strong> Eliminating WiFi-related POS downtime at PAR restaurant locations</p>
+          <div class="relative">
+            <textarea readonly id="email-6"
+              class="w-full h-36 rounded-lg bg-slate-950 border border-slate-700 text-slate-200 text-sm p-4 font-mono resize-y">Hi there,
+
+We work with restaurant tech companies like Toast and SpotOn to solve a problem I suspect hits PAR hard: when WiFi degrades during peak dinner service, it cascades into failed payments, backed-up kitchen displays, and frustrated on-site support calls across dozens of locations.
+
+Our WiFi infrastructure gives your customers reliable, redundant connectivity that actually holds up when every ordering terminal, kitchen display, and payment device is firing at once—no more blaming the venue&#x27;s network. Since your customers depend on continuous connectivity for order management and payment processing, eliminating that dependency on spotty venue WiFi could be a real differentiator for PAR.
+
+Would you be open to a quick 15-minute call to see if this could fit into your product roadmap?
+
+Thanks,
+[Your Name]</textarea>
+            <button onclick="copyEmail('email-6', this)"
+              class="absolute top-2 right-2 px-3 py-1 text-xs rounded bg-orange-500 hover:bg-orange-400 text-slate-900 font-semibold">
+              Copy
+            </button>
+          </div>
+        </div>
+        <div class="card rounded-xl border border-slate-700/80 bg-slate-900/60 p-6 shadow-lg">
+          <div class="flex flex-wrap items-start justify-between gap-3 mb-4">
+            <div>
+              <span class="text-orange-400 font-bold text-sm">#7 · Score 9/10</span>
+              <h3 class="text-xl font-semibold text-white mt-1">Ingenico</h3>
+              <p class="text-slate-400 text-sm">POS Systems &amp; Payment Processing · Atlanta, Georgia</p>
+            </div>
+            <a href="https://www.ingenico.com" target="_blank" rel="noopener"
+               class="text-sm text-orange-400 hover:text-orange-300">Visit site →</a>
+          </div>
+          <div class="grid md:grid-cols-2 gap-4 text-sm text-slate-300 mb-4">
+            <div><span class="text-slate-500">Target:</span> VP of Network Operations or Director of Infrastructure</div>
+            <div><span class="text-slate-500">Product fit:</span> <span class="text-orange-300">LTE</span></div>
+            <div><span class="text-slate-500">Employees:</span> 200-400</div>
+            <div><span class="text-slate-500">Best timing:</span> Q4 before annual budget cycles, emphasizing how LTE redundancy reduces payment processing downtime costs and positions them ahead of Toast/SpotOn integrations in the competitive POS market</div>
+            <div class="md:col-span-2"><span class="text-slate-500">Tech stack:</span> Combination of carrier LTE/4G with WiFi 5/6 fallback, likely proprietary payment gateway software, cloud-based transaction processing infrastructure, and legacy on-premise management systems for terminal fleet management</div>
+            <div class="md:col-span-2"><span class="text-slate-500">Why networking:</span> Operates thousands of connected payment terminals across retail and hospitality venues that require reliable WiFi/LTE connectivity for transaction processing and real-time data sync. Their distributed network of devices demands robust wireless infrastructure.</div>
+          </div>
+          <p class="text-xs text-slate-500 uppercase tracking-wide mb-2">Pain points</p>
+          <ul class="list-disc list-inside text-slate-300 text-sm mb-5 space-y-1"><li>Ensuring 99.9%+ uptime across thousands of distributed payment terminals to prevent transaction failures and revenue loss at point-of-sale</li><li>Managing connectivity costs and redundancy across geographically dispersed retail and hospitality locations with varying ISP quality and availability</li><li>Real-time data synchronization and fraud detection requiring ultra-reliable wireless backhaul with minimal latency for thousands of concurrent payment processing requests</li></ul>
+          <p class="text-xs text-slate-500 uppercase tracking-wide mb-2">Cold email</p>
+          <p class="text-sm text-orange-200 mb-2"><strong>Subject:</strong> Reducing payment terminal downtime at Ingenico</p>
+          <div class="relative">
+            <textarea readonly id="email-7"
+              class="w-full h-36 rounded-lg bg-slate-950 border border-slate-700 text-slate-200 text-sm p-4 font-mono resize-y">Hi [Name],
+
+Every second a payment terminal goes offline costs Ingenico revenue—we get it. Managing connectivity across thousands of distributed POS devices with varying ISP quality is a nightmare, especially when fraud detection and real-time transaction sync can&#x27;t afford even milliseconds of latency.
+
+We&#x27;ve helped payment processors like Toast and SpotOn eliminate connectivity dead zones by deploying resilient LTE infrastructure that handles thousands of concurrent transactions without breaking a sweat. The result? 99.9%+ uptime, reduced ISP redundancy costs, and the network reliability your terminals actually need.
+
+Would love to show you how this could work for Ingenico&#x27;s footprint—just 15 minutes to see if it&#x27;s a fit?</textarea>
+            <button onclick="copyEmail('email-7', this)"
+              class="absolute top-2 right-2 px-3 py-1 text-xs rounded bg-orange-500 hover:bg-orange-400 text-slate-900 font-semibold">
+              Copy
+            </button>
+          </div>
+        </div>
+        <div class="card rounded-xl border border-slate-700/80 bg-slate-900/60 p-6 shadow-lg">
+          <div class="flex flex-wrap items-start justify-between gap-3 mb-4">
+            <div>
+              <span class="text-orange-400 font-bold text-sm">#8 · Score 9/10</span>
+              <h3 class="text-xl font-semibold text-white mt-1">Cake Technologies</h3>
+              <p class="text-slate-400 text-sm">Hospitality (Restaurant Management) · San Francisco, California</p>
+            </div>
+            <a href="https://www.getcake.com" target="_blank" rel="noopener"
+               class="text-sm text-orange-400 hover:text-orange-300">Visit site →</a>
+          </div>
+          <div class="grid md:grid-cols-2 gap-4 text-sm text-slate-300 mb-4">
+            <div><span class="text-slate-500">Target:</span> VP of Operations or Director of Infrastructure</div>
+            <div><span class="text-slate-500">Product fit:</span> <span class="text-orange-300">LTE</span></div>
+            <div><span class="text-slate-500">Employees:</span> 150-250</div>
+            <div><span class="text-slate-500">Best timing:</span> Q1 or Q3 - coinciding with annual infrastructure planning cycles or post-holiday season when expansion and system upgrades are evaluated</div>
+            <div class="md:col-span-2"><span class="text-slate-500">Tech stack:</span> Cloud-based SaaS platform with on-premise POS terminals, likely leveraging AWS or similar cloud infrastructure, integrated with third-party payment processors and kitchen management systems</div>
+            <div class="md:col-span-2"><span class="text-slate-500">Why networking:</span> Provides restaurant management software and integrations for multi-location hospitality businesses requiring stable connectivity across stores for POS systems, online ordering, and kitchen display systems.</div>
+          </div>
+          <p class="text-xs text-slate-500 uppercase tracking-wide mb-2">Pain points</p>
+          <ul class="list-disc list-inside text-slate-300 text-sm mb-5 space-y-1"><li>Network reliability and latency issues across multi-location deployments affecting POS uptime and customer transactions</li><li>Inconsistent connectivity for kitchen display systems and real-time order synchronization between online ordering platforms and physical stores</li><li>Bandwidth congestion during peak hours impacting payment processing speed and inventory management system performance</li></ul>
+          <p class="text-xs text-slate-500 uppercase tracking-wide mb-2">Cold email</p>
+          <p class="text-sm text-orange-200 mb-2"><strong>Subject:</strong> Fixing POS downtime across your restaurant locations</p>
+          <div class="relative">
+            <textarea readonly id="email-8"
+              class="w-full h-36 rounded-lg bg-slate-950 border border-slate-700 text-slate-200 text-sm p-4 font-mono resize-y">Hi [Name],
+
+We work with hospitality tech companies like Toast to solve the exact problem you&#x27;re likely experiencing—network reliability tanking during peak hours, which kills POS uptime and real-time order syncing between locations. At Cake Technologies, that translates to transaction delays, kitchen display lag, and frustrated customers.
+
+Proto&#x27;s LTE infrastructure eliminates bandwidth congestion and latency issues that plague multi-location deployments, ensuring your payment processing and inventory management stay rock-solid when it matters most.
+
+Would you be open to a quick 15-minute call to see how this could apply to your network setup?</textarea>
+            <button onclick="copyEmail('email-8', this)"
+              class="absolute top-2 right-2 px-3 py-1 text-xs rounded bg-orange-500 hover:bg-orange-400 text-slate-900 font-semibold">
+              Copy
+            </button>
+          </div>
+        </div>
+        <div class="card rounded-xl border border-slate-700/80 bg-slate-900/60 p-6 shadow-lg">
+          <div class="flex flex-wrap items-start justify-between gap-3 mb-4">
+            <div>
+              <span class="text-orange-400 font-bold text-sm">#9 · Score 9/10</span>
+              <h3 class="text-xl font-semibold text-white mt-1">Upserve</h3>
+              <p class="text-slate-400 text-sm">Hospitality / POS Systems · Providence, Rhode Island</p>
+            </div>
+            <a href="https://www.upserve.com" target="_blank" rel="noopener"
+               class="text-sm text-orange-400 hover:text-orange-300">Visit site →</a>
+          </div>
+          <div class="grid md:grid-cols-2 gap-4 text-sm text-slate-300 mb-4">
+            <div><span class="text-slate-500">Target:</span> VP of Operations or Director of IT Infrastructure</div>
+            <div><span class="text-slate-500">Product fit:</span> <span class="text-orange-300">WiFi</span></div>
+            <div><span class="text-slate-500">Employees:</span> 300-400</div>
+            <div><span class="text-slate-500">Best timing:</span> Q4 during holiday season planning when restaurants are expanding locations and upgrading systems for peak traffic, or after identifying multi-location expansion announcements</div>
+            <div class="md:col-span-2"><span class="text-slate-500">Tech stack:</span> Cloud-based POS (proprietary), Likely Cisco or Aruba WiFi infrastructure, Multiple LTE backup providers, Payment processing via third-party gateways, Kitchen display systems on standard networking</div>
+            <div class="md:col-span-2"><span class="text-slate-500">Why networking:</span> Upserve provides cloud-based restaurant management and POS solutions that require reliable WiFi and LTE connectivity across multiple restaurant locations for real-time order processing, payment transactions, and kitchen display systems.</div>
+          </div>
+          <p class="text-xs text-slate-500 uppercase tracking-wide mb-2">Pain points</p>
+          <ul class="list-disc list-inside text-slate-300 text-sm mb-5 space-y-1"><li>Network reliability issues causing POS transaction failures and payment processing delays across multiple restaurant locations</li><li>WiFi dead zones in kitchens and dining areas impacting real-time kitchen display system synchronization and order accuracy</li><li>High bandwidth demands from simultaneous payment processing, cloud sync, and customer-facing systems straining existing connectivity infrastructure</li></ul>
+          <p class="text-xs text-slate-500 uppercase tracking-wide mb-2">Cold email</p>
+          <p class="text-sm text-orange-200 mb-2"><strong>Subject:</strong> Fixing WiFi dead zones killing your POS reliability</p>
+          <div class="relative">
+            <textarea readonly id="email-9"
+              class="w-full h-36 rounded-lg bg-slate-950 border border-slate-700 text-slate-200 text-sm p-4 font-mono resize-y">Hey there,
+
+I noticed Upserve powers POS systems across multiple restaurant locations, which means network downtime hits your bottom line fast—especially when WiFi dead zones in kitchens knock out kitchen display systems or payment processing lags during peak hours.
+
+We work with restaurant tech companies like Toast to eliminate exactly this problem. Pronto&#x27;s WiFi infrastructure is built for high-density environments with simultaneous transactions and cloud sync demands, so your payment processing stays fast and your KDS stays in sync, even during dinner rush.
+
+Would be worth a quick 15-minute call to see if we can help Upserve&#x27;s customers avoid these connectivity headaches. Are you free early next week?</textarea>
+            <button onclick="copyEmail('email-9', this)"
+              class="absolute top-2 right-2 px-3 py-1 text-xs rounded bg-orange-500 hover:bg-orange-400 text-slate-900 font-semibold">
+              Copy
+            </button>
+          </div>
+        </div>
+        <div class="card rounded-xl border border-slate-700/80 bg-slate-900/60 p-6 shadow-lg">
+          <div class="flex flex-wrap items-start justify-between gap-3 mb-4">
+            <div>
+              <span class="text-orange-400 font-bold text-sm">#10 · Score 9/10</span>
+              <h3 class="text-xl font-semibold text-white mt-1">Apt</h3>
+              <p class="text-slate-400 text-sm">Retail / POS Systems · Austin, Texas</p>
+            </div>
+            <a href="https://www.apt.com" target="_blank" rel="noopener"
+               class="text-sm text-orange-400 hover:text-orange-300">Visit site →</a>
+          </div>
+          <div class="grid md:grid-cols-2 gap-4 text-sm text-slate-300 mb-4">
+            <div><span class="text-slate-500">Target:</span> VP of Infrastructure / Head of Network Operations</div>
+            <div><span class="text-slate-500">Product fit:</span> <span class="text-orange-300">WiFi</span></div>
+            <div><span class="text-slate-500">Employees:</span> 150-250</div>
+            <div><span class="text-slate-500">Best timing:</span> Q4 planning cycle (September-October) when retailers prepare infrastructure for holiday season peak traffic, or after identifying customers with multi-location deployments experiencing connectivity scaling challenges</div>
+            <div class="md:col-span-2"><span class="text-slate-500">Tech stack:</span> Cloud-based POS with REST APIs, mobile iOS/Android apps, real-time inventory sync, likely AWS or similar cloud infrastructure, integrated payment processing (Stripe/Square compatible)</div>
+            <div class="md:col-span-2"><span class="text-slate-500">Why networking:</span> Apt develops retail POS and inventory management software for small and mid-sized retailers that depend on stable WiFi and mobile connectivity to sync sales data, manage inventory across locations, and process payments seamlessly.</div>
+          </div>
+          <p class="text-xs text-slate-500 uppercase tracking-wide mb-2">Pain points</p>
+          <ul class="list-disc list-inside text-slate-300 text-sm mb-5 space-y-1"><li>WiFi reliability issues causing POS transaction failures and inventory sync delays across multiple retail locations</li><li>Inconsistent mobile connectivity impacting real-time payment processing and customer-facing mobile checkout experiences</li><li>Network latency and dropouts during peak sales periods leading to lost transactions and poor inventory visibility</li></ul>
+          <p class="text-xs text-slate-500 uppercase tracking-wide mb-2">Cold email</p>
+          <p class="text-sm text-orange-200 mb-2"><strong>Subject:</strong> Fixing WiFi reliability for Apt&#x27;s retail customers</p>
+          <div class="relative">
+            <textarea readonly id="email-10"
+              class="w-full h-36 rounded-lg bg-slate-950 border border-slate-700 text-slate-200 text-sm p-4 font-mono resize-y">Hi there,
+
+I noticed Apt powers POS and inventory systems for retailers who can&#x27;t afford network downtime—especially during peak sales when every second counts. We&#x27;ve been working with companies like Toast to solve exactly this: unreliable WiFi causing transaction failures and inventory sync delays across multiple locations.
+
+Proonto&#x27;s WiFi infrastructure is purpose-built for retail environments where consistent connectivity directly impacts revenue. I&#x27;d love to show you how we&#x27;re helping similar POS platforms eliminate the latency and dropouts that frustrate your customers.
+
+Would you have 15 minutes next week to explore how this could work for Apt?</textarea>
+            <button onclick="copyEmail('email-10', this)"
+              class="absolute top-2 right-2 px-3 py-1 text-xs rounded bg-orange-500 hover:bg-orange-400 text-slate-900 font-semibold">
+              Copy
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-800 mt-16 py-6 text-center text-slate-500 text-sm">
+    Pronto Networks GTM Intelligence · Powered by Claude
+  </footer>
+
+  <script>
+    const leads = [{"rank": 1, "company_name": "Shift4 Payments", "website": "https://www.shift4.com", "industry": "POS Systems & Payment Processing", "employee_count": "300-400", "fit_score": 9, "score_reason": "Excellent fit: POS/payment processing industry, ideal employee count (300-400), nationwide terminal network requiring reliable connectivity, and direct alignment with Pronto customer profiles like SpotOn and Elavon.", "decision_maker": "VP of Infrastructure & Network Operations", "pronto_product": "LTE"}, {"rank": 2, "company_name": "TouchBistro", "website": "https://www.touchbistro.com", "industry": "Hospitality POS", "employee_count": "150-250", "fit_score": 9, "score_reason": "Excellent fit: Hospitality POS provider, sweet spot employee count (150-250), multi-location restaurant/bar customers with critical WiFi/LTE needs, and strong similarity to Toast customer base.", "decision_maker": "VP of Product Engineering or Director of Infrastructure", "pronto_product": "LTE"}, {"rank": 3, "company_name": "Clover (Fiserv)", "website": "https://www.clover.com", "industry": "POS Systems / Hospitality & Retail", "employee_count": "200-300", "fit_score": 9, "score_reason": "Perfect ICP match: POS/hospitality industry, 200-300 employees in sweet spot, distributed merchant network with critical networking needs, and direct competitor to known Pronto customers like Toast and SpotOn.", "decision_maker": "VP of Infrastructure & Network Operations", "pronto_product": "WiFi"}, {"rank": 4, "company_name": "Heartland Payment Systems", "website": "https://www.heartlandpaymentsystems.com", "industry": "POS Systems & Payment Processing", "employee_count": "300-400", "fit_score": 9, "score_reason": "Perfect ICP match: POS/payment processing industry, ideal employee count (300-400), thousands of connected devices requiring reliable connectivity, and direct alignment with Toast/SpotOn customer profile.", "decision_maker": "VP of Network Operations or Director of Infrastructure", "pronto_product": "LTE"}, {"rank": 5, "company_name": "Micros Systems (Oracle)", "website": "https://www.oracle.com/hospitality/", "industry": "Hospitality POS", "employee_count": "300-400", "fit_score": 9, "score_reason": "Perfect ICP match: hospitality POS leader with 300-400 employees, massive multi-location networking needs, US-based, and directly comparable to Toast/SpotOn customer profile.", "decision_maker": "VP of Product Infrastructure or Director of Cloud Operations", "pronto_product": "LTE"}, {"rank": 6, "company_name": "PAR Technology", "website": "https://www.partech.com/", "industry": "Hospitality Technology", "employee_count": "250-350", "fit_score": 9, "score_reason": "Excellent fit: hospitality technology provider in sweet spot employee range (250-350), critical WiFi/cellular dependency for connected POS systems, US headquarters, and strong alignment with Pronto customer base.", "decision_maker": "VP of Product Engineering or Director of Infrastructure", "pronto_product": "WiFi"}, {"rank": 7, "company_name": "Ingenico", "website": "https://www.ingenico.com", "industry": "POS Systems & Payment Processing", "employee_count": "200-400", "fit_score": 9, "score_reason": "Perfect ICP match: POS payment processing industry, ideal employee size (200-400), thousands of distributed connected devices requiring reliable connectivity, US-based, and directly comparable to Toast/SpotOn ecosystem.", "decision_maker": "VP of Network Operations or Director of Infrastructure", "pronto_product": "LTE"}, {"rank": 8, "company_name": "Cake Technologies", "website": "https://www.getcake.com", "industry": "Hospitality (Restaurant Management)", "employee_count": "150-250", "fit_score": 9, "score_reason": "Excellent ICP fit: hospitality/restaurant vertical, sweet spot employee count (150-250), multi-location businesses with critical POS/kitchen connectivity needs, and strong alignment with Toast/Lightspeed customer profiles.", "decision_maker": "VP of Operations or Director of Infrastructure", "pronto_product": "LTE"}, {"rank": 9, "company_name": "Upserve", "website": "https://www.upserve.com", "industry": "Hospitality / POS Systems", "employee_count": "300-400", "fit_score": 9, "score_reason": "Excellent ICP fit: hospitality/POS industry, 300-400 employees in sweet spot, multi-location networking needs, US-based, and directly comparable to Toast/SpotOn customer profile.", "decision_maker": "VP of Operations or Director of IT Infrastructure", "pronto_product": "WiFi"}, {"rank": 10, "company_name": "Apt", "website": "https://www.apt.com", "industry": "Retail / POS Systems", "employee_count": "150-250", "fit_score": 9, "score_reason": "Excellent ICP fit: retail/POS industry, 150-250 employees in ideal range, multi-location connectivity requirements, US-based, and strong alignment with Lightspeed Retail/365 Retail Markets customer segment.", "decision_maker": "VP of Infrastructure / Head of Network Operations", "pronto_product": "WiFi"}, {"rank": 11, "company_name": "Vend", "website": "https://www.vendhq.com", "industry": "Retail POS", "employee_count": "200-350", "fit_score": 8, "score_reason": "Strong fit: Retail POS platform, ideal employee count (200-350), multi-location retailers requiring network connectivity, and similar to Lightspeed Retail and 365 Retail Markets customers.", "decision_maker": "VP of Product Infrastructure", "pronto_product": "WiFi"}, {"rank": 12, "company_name": "Bluefin Payment Systems", "website": "https://www.bluefinpayments.com", "industry": "POS Systems / Payments", "employee_count": "150-250", "fit_score": 8, "score_reason": "Excellent fit: POS/payments in hospitality/retail, 150-250 employees in ideal range, multi-location merchants requiring reliable connectivity, though slightly less direct alignment than Toast/SpotOn ecosystem.", "decision_maker": "VP of Infrastructure & Network Operations", "pronto_product": "LTE"}, {"rank": 13, "company_name": "Guest Innovations", "website": "https://www.guestinnovations.com", "industry": "Hospitality Technology", "employee_count": "75-150", "fit_score": 8, "score_reason": "Excellent fit: hospitality industry with guest WiFi focus, employee count in sweet spot (75-150), strong networking requirements, and direct alignment with venue-based connectivity needs of Toast/SpotOn customers.", "decision_maker": "VP of Technology or Director of Network Infrastructure", "pronto_product": "WiFi"}, {"rank": 14, "company_name": "Dude Solutions", "website": "https://www.dudesolutions.com", "industry": "Facility Management & Smart Buildings", "employee_count": "250-450", "fit_score": 8, "score_reason": "Strong ICP fit: facility management across retail/healthcare verticals with significant IoT and mobile device connectivity requirements, ideal employee size (250-450), though less direct alignment than pure POS/hospitality plays.", "decision_maker": "VP of Operations or Director of IT Infrastructure", "pronto_product": "WiFi"}, {"rank": 15, "company_name": "Tenant", "website": "https://www.tenant.com", "industry": "Healthcare - Clinic Management", "employee_count": "500-800", "fit_score": 8, "score_reason": "Excellent fit with healthcare industry presence, employee count (500-800) within sweet spot, multi-facility networking needs, and clear requirement for reliable WiFi/LTE connectivity for critical operations.", "decision_maker": "VP of IT Operations or Director of Clinical IT Infrastructure", "pronto_product": "WiFi with LTE backup"}, {"rank": 16, "company_name": "Olo", "website": "https://www.olo.com", "industry": "Hospitality & Food Service Technology", "employee_count": "300-400", "fit_score": 8, "score_reason": "Perfect industry match (food service/hospitality), ideal employee size, thousands of distributed locations with critical networking needs, strong US presence, and direct alignment with Toast/SpotOn customer profiles.", "decision_maker": "VP of Infrastructure & Operations", "pronto_product": "WiFi"}, {"rank": 17, "company_name": "Zebra Technologies", "website": "https://www.zebra.com", "industry": "Retail & Healthcare IoT", "employee_count": "5000", "fit_score": 7, "score_reason": "Strong industry match (retail/healthcare IoT) with excellent networking needs and US presence, but 5000 employees exceeds sweet spot range.", "decision_maker": "VP of IoT Infrastructure or Director of Network Operations", "pronto_product": "5G"}, {"rank": 18, "company_name": "SeamlessWifi", "website": "https://www.seamlesswifi.com", "industry": "Retail / Smart Venues", "employee_count": "100-200", "fit_score": 7, "score_reason": "Good fit: Smart venues/retail focus with 100-200 employees and clear LTE/5G backhaul needs, but as a WiFi infrastructure provider they may be more of a technology partner than end-customer compared to core POS/merchant customers.", "decision_maker": "VP of Network Infrastructure", "pronto_product": "5G"}, {"rank": 19, "company_name": "Swiftly", "website": "https://www.swiftly.com", "industry": "Smart City & Connected Retail", "employee_count": "150-250", "fit_score": 7, "score_reason": "Strong fit: connected retail/IoT focus with solid employee count (150-250), but smart city positioning is broader than core hospitality/retail/healthcare verticals and less directly comparable to primary Pronto customers.", "decision_maker": "VP of Infrastructure & Operations", "pronto_product": "WiFi"}, {"rank": 20, "company_name": "Appetize Technologies", "website": "https://www.appetize.com/", "industry": "Retail POS & Hospitality", "employee_count": "80-150", "fit_score": 7, "score_reason": "Good fit: retail/hospitality POS solution with solid networking needs and US presence, but smaller employee count (80-150) is below sweet spot and less established than primary ICP comparables.", "decision_maker": "VP of Operations or Director of IT Infrastructure", "pronto_product": "WiFi"}, {"rank": 21, "company_name": "The Fresh Market", "website": "https://www.thefreshmarket.com", "industry": "Retail - Grocery", "employee_count": "2,000+", "fit_score": 7, "score_reason": "Strong industry match (retail/grocery) with significant multi-location networking needs, but employee count (2,000+) exceeds sweet spot and company size suggests they may already have established enterprise solutions.", "decision_maker": "VP of Store Operations or Director of IT Infrastructure", "pronto_product": "WiFi"}, {"rank": 22, "company_name": "Square", "website": "https://www.square.com", "industry": "POS Systems & Payments", "employee_count": "8000", "fit_score": 6, "score_reason": "Perfect industry fit (POS/payments) and US presence, but company size of 8000 employees is significantly above sweet spot, limiting relevance as a direct customer.", "decision_maker": "VP of Network Infrastructure or Director of Hardware Engineering", "pronto_product": "LTE"}, {"rank": 23, "company_name": "Gather Technologies", "website": "https://www.gathertech.com", "industry": "Healthcare / Smart Cities IoT", "employee_count": "100-200", "fit_score": 6, "score_reason": "Moderate fit: strong networking needs and US presence, but healthcare/IoT focus is adjacent rather than core to Pronto's POS/hospitality expertise, and 100-200 employees is below sweet spot.", "decision_maker": "Director of Clinical Engineering or VP of Facility Operations", "pronto_product": "5G"}, {"rank": 24, "company_name": "NCR Voyix", "website": "https://www.ncrvoyx.com", "industry": "POS Systems & Hospitality Technology", "employee_count": "9000", "fit_score": 5, "score_reason": "Excellent industry fit (POS/hospitality/kiosks) and US presence, but 9000 employees is well outside sweet spot and company focuses on software/hardware rather than network infrastructure.", "decision_maker": "VP of Infrastructure & Operations", "pronto_product": "WiFi"}, {"rank": 25, "company_name": "Brinker International", "website": "https://www.brinker.com", "industry": "Hospitality - Restaurant", "employee_count": "100,000+", "fit_score": 3, "score_reason": "Despite perfect industry fit (hospitality/restaurant), the 100,000+ employee count and thousands of locations indicate a large enterprise that likely has dedicated IT infrastructure and wouldn't be an ICP match.", "decision_maker": "VP of Information Technology or Director of Network Operations", "pronto_product": "WiFi"}];
+
+    function badgeClass(industry) {
+      const k = (industry || '').toLowerCase();
+      if (k.includes('hospitality')) return 'badge-hospitality';
+      if (k.includes('retail')) return 'badge-retail';
+      if (k.includes('healthcare') || k.includes('health')) return 'badge-healthcare';
+      if (k.includes('pos')) return 'badge-pos';
+      if (k.includes('kiosk')) return 'badge-kiosk';
+      if (k.includes('smart')) return 'badge-smart';
+      return 'badge-default';
+    }
+
+    function scoreColor(score) {
+      if (score >= 8) return 'bg-emerald-500';
+      if (score >= 5) return 'bg-amber-400';
+      return 'bg-red-500';
+    }
+
+    function renderTable(data) {
+      const tbody = document.getElementById('table-body');
+      tbody.innerHTML = data.map(row => `
+        <tr class="hover:bg-slate-800/50">
+          <td class="px-4 py-3 font-mono text-orange-400">${row.rank}</td>
+          <td class="px-4 py-3 font-medium text-white">
+            <a href="${row.website}" target="_blank" rel="noopener" class="hover:text-orange-400">${row.company_name}</a>
+          </td>
+          <td class="px-4 py-3">
+            <span class="px-2 py-1 rounded text-xs font-medium ${badgeClass(row.industry)}">${row.industry}</span>
+          </td>
+          <td class="px-4 py-3 text-slate-300">${row.employee_count}</td>
+          <td class="px-4 py-3">
+            <div class="flex items-center gap-2 min-w-[100px]">
+              <div class="flex-1 h-2 bg-slate-700 rounded-full overflow-hidden">
+                <div class="h-full ${scoreColor(row.fit_score)}" style="width:${row.fit_score * 10}%"></div>
+              </div>
+              <span class="text-xs font-bold w-6">${row.fit_score}</span>
+            </div>
+          </td>
+          <td class="px-4 py-3 text-slate-400 max-w-xs">${row.score_reason}</td>
+          <td class="px-4 py-3 text-slate-300">${row.decision_maker}</td>
+          <td class="px-4 py-3 text-orange-300">${row.pronto_product}</td>
+        </tr>
+      `).join('');
+    }
+
+    // Industry filter options
+    const industries = [...new Set(leads.map(l => l.industry).filter(Boolean))].sort();
+    const sel = document.getElementById('industry-filter');
+    industries.forEach(ind => {
+      const o = document.createElement('option');
+      o.value = ind; o.textContent = ind;
+      sel.appendChild(o);
+    });
+
+    let filtered = [...leads];
+    let sortKey = 'rank';
+    let sortAsc = true;
+
+    function applyFilters() {
+      const q = document.getElementById('search').value.toLowerCase();
+      const ind = sel.value;
+      filtered = leads.filter(l =>
+        l.company_name.toLowerCase().includes(q) &&
+        (!ind || l.industry === ind)
+      );
+      sortData();
+    }
+
+    function sortData() {
+      filtered.sort((a, b) => {
+        let va = a[sortKey], vb = b[sortKey];
+        if (sortKey === 'fit_score' || sortKey === 'rank') {
+          va = Number(va); vb = Number(vb);
+        } else {
+          va = String(va).toLowerCase(); vb = String(vb).toLowerCase();
+        }
+        if (va < vb) return sortAsc ? -1 : 1;
+        if (va > vb) return sortAsc ? 1 : -1;
+        return 0;
+      });
+      renderTable(filtered);
+    }
+
+    document.getElementById('search').addEventListener('input', applyFilters);
+    sel.addEventListener('change', applyFilters);
+    document.querySelectorAll('th.sortable').forEach(th => {
+      th.addEventListener('click', () => {
+        const key = th.dataset.sort;
+        if (sortKey === key) sortAsc = !sortAsc;
+        else { sortKey = key; sortAsc = true; }
+        sortData();
+      });
+    });
+
+    function copyEmail(id, btn) {
+      const ta = document.getElementById(id);
+      ta.select();
+      navigator.clipboard.writeText(ta.value).then(() => {
+        const orig = btn.textContent;
+        btn.textContent = 'Copied!';
+        setTimeout(() => btn.textContent = orig, 2000);
+      });
+    }
+
+    applyFilters();
+  </script>
+</body>
+</html>

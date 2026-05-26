@@ -1,0 +1,152 @@
+PRONTO NETWORKS — TOP 10 COLD EMAILS
+Generated: May 26, 2026 at 03:38 AM
+============================================================
+
+--- #1 Shift4 Payments (Fit: 9/10) ---
+To: VP of Infrastructure & Network Operations
+Subject: 99.9% uptime for Shift4's payment terminals nationwide
+
+Hi [Name],
+
+I've been following Shift4's growth across retail and hospitality, and I imagine keeping thousands of payment terminals connected and synced in real-time is no small feat—especially when network hiccups directly hit revenue. We work with companies like Toast and SpotOn to solve exactly this: delivering carrier-grade LTE connectivity that eliminates the redundancy headaches and latency issues that kill transaction speeds and compliance.
+
+Given the mission-critical nature of your terminal network, I'd love to explore whether our LTE infrastructure could give your team the 99.9%+ uptime and failover reliability you need without the complexity. Would you have 15 minutes next week for a quick call?
+
+Thanks,
+[Your Name]
+
+============================================================
+
+--- #2 TouchBistro (Fit: 9/10) ---
+To: VP of Product Engineering or Director of Infrastructure
+Subject: Fixing WiFi dead zones for TouchBistro locations
+
+Hey there,
+
+I was looking at TouchBistro's multi-location footprint and realized something: when WiFi drops during dinner rush, your iPad terminals go dark and orders back up in the kitchen. We work with hospitality POS companies like Toast to solve exactly this—blending WiFi, LTE, and 5G so restaurants never lose connectivity, even when one network fails.
+
+The setup gives you automatic failover, better bandwidth during peak hours, and zero payment processing hiccups. Most importantly, your customers don't notice when the network switches—the kitchen display just keeps moving orders.
+
+Worth 15 minutes to see if this fits your deployment model? I can show you how it works at other multi-unit restaurants.
+
+Cheers
+
+============================================================
+
+--- #3 Clover (Fiserv) (Fit: 9/10) ---
+To: VP of Infrastructure & Network Operations
+Subject: Fixing WiFi reliability for Clover merchants (99.9% uptime)
+
+Hi [Name],
+
+We work with POS companies like Toast and SpotOn to solve a problem I'm guessing hits Clover hard: merchants losing transactions and customers because WiFi drops during peak hours. When you're managing connectivity across thousands of locations with different ISPs and hardware, reliability becomes everything.
+
+Our WiFi infrastructure is built specifically for distributed retail and hospitality environments—it handles the congestion, stays up when it matters most, and cuts down those expensive support tickets from connectivity issues. Given Clover's scale, we've seen companies similar to yours reduce downtime by eliminating the weak links in their merchant networks.
+
+Would you be open to a quick 15-minute call to see if we're a fit for your infrastructure roadmap?
+
+Best,
+[Your Name]
+
+============================================================
+
+--- #4 Heartland Payment Systems (Fit: 9/10) ---
+To: VP of Network Operations or Director of Infrastructure
+Subject: Fixing connectivity issues for Heartland's distributed POS network
+
+Hi [Name],
+
+I've been following Heartland's growth in POS processing, and I imagine managing reliable connectivity across thousands of terminals in different venues is a real headache—especially when spotty WiFi from venue operators tanks your uptime and impacts transactions. We've worked with payment processors like SpotOn who faced the same challenge, and they've cut their connectivity-related support costs significantly by layering in dedicated LTE connectivity as a failover.
+
+Pronto's LTE infrastructure gives you that reliability guarantee without relying on venue WiFi quality. Given your scale, I think there's a real opportunity to reduce your support burden and hit that 99.9%+ uptime you need.
+
+Would you have 15 minutes next week to explore how this could work for Heartland?
+
+============================================================
+
+--- #5 Micros Systems (Oracle) (Fit: 9/10) ---
+To: VP of Product Infrastructure or Director of Cloud Operations
+Subject: Eliminating connectivity gaps across your restaurant & hotel locations
+
+Hi [Name],
+
+I was looking at how Micros handles POS connectivity across thousands of locations and realized network reliability is probably keeping you up at night—one dropped connection during peak service impacts revenue and guest experience instantly. We work with hospitality POS providers like Toast who faced similar challenges managing both critical transaction processing and guest WiFi without network congestion or security issues.
+
+Prono Networks' LTE infrastructure gives you redundant, enterprise-grade connectivity specifically built for distributed locations, so your payment systems stay live even when primary connections fail. Rather than pitch, I'd love to understand your current setup in a quick 15-minute call and see if this could reduce your downtime headaches.
+
+Would next Tuesday or Wednesday work for a brief conversation?
+
+============================================================
+
+--- #6 PAR Technology (Fit: 9/10) ---
+To: VP of Product Engineering or Director of Infrastructure
+Subject: Eliminating WiFi-related POS downtime at PAR restaurant locations
+
+Hi there,
+
+We work with restaurant tech companies like Toast and SpotOn to solve a problem I suspect hits PAR hard: when WiFi degrades during peak dinner service, it cascades into failed payments, backed-up kitchen displays, and frustrated on-site support calls across dozens of locations.
+
+Our WiFi infrastructure gives your customers reliable, redundant connectivity that actually holds up when every ordering terminal, kitchen display, and payment device is firing at once—no more blaming the venue's network. Since your customers depend on continuous connectivity for order management and payment processing, eliminating that dependency on spotty venue WiFi could be a real differentiator for PAR.
+
+Would you be open to a quick 15-minute call to see if this could fit into your product roadmap?
+
+Thanks,
+[Your Name]
+
+============================================================
+
+--- #7 Ingenico (Fit: 9/10) ---
+To: VP of Network Operations or Director of Infrastructure
+Subject: Reducing payment terminal downtime at Ingenico
+
+Hi [Name],
+
+Every second a payment terminal goes offline costs Ingenico revenue—we get it. Managing connectivity across thousands of distributed POS devices with varying ISP quality is a nightmare, especially when fraud detection and real-time transaction sync can't afford even milliseconds of latency.
+
+We've helped payment processors like Toast and SpotOn eliminate connectivity dead zones by deploying resilient LTE infrastructure that handles thousands of concurrent transactions without breaking a sweat. The result? 99.9%+ uptime, reduced ISP redundancy costs, and the network reliability your terminals actually need.
+
+Would love to show you how this could work for Ingenico's footprint—just 15 minutes to see if it's a fit?
+
+============================================================
+
+--- #8 Cake Technologies (Fit: 9/10) ---
+To: VP of Operations or Director of Infrastructure
+Subject: Fixing POS downtime across your restaurant locations
+
+Hi [Name],
+
+We work with hospitality tech companies like Toast to solve the exact problem you're likely experiencing—network reliability tanking during peak hours, which kills POS uptime and real-time order syncing between locations. At Cake Technologies, that translates to transaction delays, kitchen display lag, and frustrated customers.
+
+Proto's LTE infrastructure eliminates bandwidth congestion and latency issues that plague multi-location deployments, ensuring your payment processing and inventory management stay rock-solid when it matters most.
+
+Would you be open to a quick 15-minute call to see how this could apply to your network setup?
+
+============================================================
+
+--- #9 Upserve (Fit: 9/10) ---
+To: VP of Operations or Director of IT Infrastructure
+Subject: Fixing WiFi dead zones killing your POS reliability
+
+Hey there,
+
+I noticed Upserve powers POS systems across multiple restaurant locations, which means network downtime hits your bottom line fast—especially when WiFi dead zones in kitchens knock out kitchen display systems or payment processing lags during peak hours.
+
+We work with restaurant tech companies like Toast to eliminate exactly this problem. Pronto's WiFi infrastructure is built for high-density environments with simultaneous transactions and cloud sync demands, so your payment processing stays fast and your KDS stays in sync, even during dinner rush.
+
+Would be worth a quick 15-minute call to see if we can help Upserve's customers avoid these connectivity headaches. Are you free early next week?
+
+============================================================
+
+--- #10 Apt (Fit: 9/10) ---
+To: VP of Infrastructure / Head of Network Operations
+Subject: Fixing WiFi reliability for Apt's retail customers
+
+Hi there,
+
+I noticed Apt powers POS and inventory systems for retailers who can't afford network downtime—especially during peak sales when every second counts. We've been working with companies like Toast to solve exactly this: unreliable WiFi causing transaction failures and inventory sync delays across multiple locations.
+
+Proonto's WiFi infrastructure is purpose-built for retail environments where consistent connectivity directly impacts revenue. I'd love to show you how we're helping similar POS platforms eliminate the latency and dropouts that frustrate your customers.
+
+Would you have 15 minutes next week to explore how this could work for Apt?
+
+============================================================

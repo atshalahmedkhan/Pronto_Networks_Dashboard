@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pronto Networks GTM Intelligence — Lead dashboard for hospitality, retail, healthcare, and POS prospects." />
+  <title>Pronto Networks | GTM Intelligence</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+  <div class="app">
+    <header>
+      <nav class="navbar" aria-label="Main navigation">
+        <div class="navbar__brand">
+          <p class="navbar__logo">Pronto <span>Networks</span></p>
+        </div>
+        <span class="navbar__badge">GTM Intelligence</span>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <h1 id="hero-title" class="hero__title">
+          <span class="hero__title-gradient">Lead Intelligence Dashboard</span>
+        </h1>
+        <p class="hero__subtitle">
+          25 curated prospects across hospitality, retail, healthcare, and POS — scored, enriched, and ready for outreach.
+        </p>
+
+        <div class="stats" role="group" aria-label="Summary statistics">
+          <div class="stat-card">
+            <p class="stat-card__value" data-counter="prospects">0</p>
+            <p class="stat-card__label">Prospects</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-card__value" data-counter="score">0</p>
+            <p class="stat-card__label">Avg Fit Score</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-card__value" data-counter="emails">0</p>
+            <p class="stat-card__label">Emails Ready</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-card__value" data-counter="industries">0</p>
+            <p class="stat-card__label">Industries</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="controls" aria-label="Filter and search controls">
+        <div class="controls__row">
+          <div class="search-wrap">
+            <svg class="search-wrap__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+            <input
+              type="search"
+              id="search"
+              class="search-input"
+              placeholder="Search company or industry..."
+              autocomplete="off"
+              aria-label="Search leads"
+            />
+          </div>
+          <button type="button" id="sort-btn" class="sort-btn desc" aria-label="Sort by fit score">
+            <span class="sort-btn__label">Score: High → Low</span>
+            <span class="sort-btn__arrow" aria-hidden="true">↓</span>
+          </button>
+        </div>
+        <div id="filters" class="filters" role="group" aria-label="Filter by industry"></div>
+        <p id="results-count" class="results-count" aria-live="polite"></p>
+      </section>
+
+      <section aria-label="Lead cards">
+        <div id="leads-grid" class="leads-grid"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Built by <strong>Atshal Ahmed Khan</strong> | Powered by Claude AI Pipeline</p>
+    </footer>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script type="module" src="js/background.js"></script>
+  <script type="module" src="js/filters.js"></script>
+</body>
+</html>
