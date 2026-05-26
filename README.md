@@ -136,4 +136,7 @@ This pipeline could run daily to continuously surface new prospects, score them,
 
 ---
 
+<img width="827" height="156" alt="image" src="https://github.com/user-attachments/assets/fb1d3431-a22f-4ea8-8ab1-eefe7b204724" />
+
+
 *Built in one night · May 2026 · Powered by Claude AI*
